@@ -5,11 +5,11 @@ metadata:
 spec:
   containers:
   - name: main-ctr
-    image: nigelpoulton/nginxadapter:1.0
+    image: nigelpoulton/nginxadapter:1.0 #using nigel's image
     ports:
     - containerPort: 80
   - name: helper-ctr
-    image: nginx/nginx-prometheus-exporter
+    image: nginx/nginx-prometheus-exporter #using nigel's image
     args: ["-nginx.scrape-uri","http://localhost/nginx_status"]
     ports:
     - containerPort: 9113
