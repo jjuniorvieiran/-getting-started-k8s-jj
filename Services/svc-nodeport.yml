@@ -10,5 +10,5 @@ spec:
     nodePort: 31111
     protocol: TCP
   selector:
-    app: web
+    app: web  #web is the pod's name
     

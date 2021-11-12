@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: hello-pod
   labels:
-    app: web
+    app: web #labels app will be used by the services
 spec:
   containers:
     - name: web-ctr
