@@ -5,9 +5,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: 80
-    targetPort: 8080
-    nodePort: 31111
+  - port: 80 # internal port
+    targetPort: 8080 # port which app will be listening
+    nodePort: 31111 # external port
     protocol: TCP
   selector:
     app: web  #web is the pod's name
