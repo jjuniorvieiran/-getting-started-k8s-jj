@@ -5,7 +5,7 @@ kind: Service
 metadata:
   name: ps-lb
 spec:
-  type: LoadBalancer
+  type: LoadBalancer  # LoadBalancer does not work local in minikube 
   ports:
   - port: 80
     targetPort: 8080
