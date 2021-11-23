@@ -13,9 +13,9 @@ spec:
   minReadySeconds: 5
   strategy:
     type: RollingUpdate
-    rollingUpdate:
+    rollingUpdate:   # when an image is update, also updated the pods 
       maxUnavailable: 0
-      maxSurge: 1
+      maxSurge: 1  # during the update we can go to 6 replicas
   template:
     metadata:
       labels:
